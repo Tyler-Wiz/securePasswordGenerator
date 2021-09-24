@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Random Password Generator</title>
+</head>
+<body> 
+    <h1>Generate Secure Password</h1>
+    <form action="" class="form_wrapper" id="passwordGenerator">
+        <input type="text" name="passwordResult" id="passwordResult">
+        <div class="input_container">
+            <label for="">Password Length</label>
+            <select name="" id="Password_length">
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+            </select>
+        </div>
+            
+        <div class="input_container">
+            <label for="lowercase">Include Lowercase Characters:</label>
+            <input type="checkbox" name="" id="lowercase"> 
+        </div>
+
+        <div class="input_container">
+            <label for="uppercase">Include Uppercase Characters:</label>
+            <input type="checkbox" name="" id="uppercase">
+        </div>
+
+        <div class="input_container">
+            <label for="numbers">Include Numbers:</label>
+            <input type="checkbox" name="" id="numbers">
+        </div>
+            
+        <div class="input_container">
+            <label for="symbols">Include Symbols:</label>
+            <input type="checkbox" name="" id="symbols">
+        </div>
+
+        <div class="input_container" id="begin">
+            <label for="uppercase">Begin With A letter:</label>
+            <input type="checkbox" name="" id="letterFirst">
+        </div>
+
+        <div class="input_container" id="beginNumber">
+            <label for="numberFirst">Begin With A Number:</label>
+            <input type="checkbox" name="" id="numberFirst">
+        </div>
+
+        <button type="submit" >Generate Password</button>
+    </form>
+
+<button type="submit" id="copyPassword">Copy Password</button>        
+<p id="warning"></p>
+
+</body>
+</html>
