@@ -46,8 +46,8 @@ form.addEventListener('submit', (e) => {
   
    // Show Copy, begin with Letter and Numbers // 
 
-   if(includeLowerCase) begin.style.display = 'flex'
-   if(includeLowerCase) beginNumber.style.display = 'flex'
+   if(includeLowerCase || includeSymbols || includeUpperCase || includeNumbers ) begin.style.display = 'flex'
+   if(includeLowerCase || includeSymbols || includeUpperCase || includeNumbers ) beginNumber.style.display = 'flex'
 
    if(password){
      copyPassword.style.display = 'block'
@@ -64,7 +64,6 @@ form.addEventListener('submit', (e) => {
    }
 
 })
-
 
 
 // Generate password // 
@@ -113,4 +112,18 @@ const generatePassword = (passwordLengthValue, includeLowerCase, includeUpperCas
     navigator.clipboard.writeText(passwordResult.value)
     copyPassword.innerHTML = "Copied"
 })
+
+const usage = document.querySelector('.usage')
+const usageToggle = document.querySelector('.toggle')
+
+usageToggle.innerHTML = `<button>How to Use</button>`
+
+usageToggle.addEventListener('click', (e) => {
+  usage.classList.contains('active') ? 
+  usage.classList.remove('active') : 
+  usage.classList.add('active')
+})
+
+
+
 

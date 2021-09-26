@@ -13,31 +13,40 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     text-transform: capitalize;
+    margin: 4rem auto;
+    max-width: 1200px;
 }
+
 
 h1{
     font-size: clamp(1.3rem, 2.5vw, 2.2rem);
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .form_wrapper {
+    width: 80%;
+    min-width: 400px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgb(182, 180, 180);
+    margin-bottom: 2rem;
+}
+
+.pad{
+    padding-bottom: .9rem;
 }
 
 #passwordResult{
     width:100%;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    border: 2px solid burlywood;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem;
+    margin-bottom: 2rem; 
+    border: none;
+    border-bottom: 1px solid black;
 }
 
 .input_container {
@@ -50,23 +59,93 @@ h1{
 #Password_length{
     width: 8rem;
     font-size: .9rem;
-    font-weight: 700;
 }
 
 input {
     outline: none;
 }
 
-button{
+button {
     border: none;
     background-color: cadetblue;
     color: white;
     font-size: 1.4rem;
     padding: .6rem 1.5rem;
     border-radius: 5px 20px;
-    margin-bottom: 1rem;
 }
 
 #warning{
+    text-align: center;
     color: red;
+    margin: 1rem 0 1rem 0;
 }
+.toggle{
+    width: 100%;
+}
+
+.toggle button{
+    width: 100%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 1.4rem;
+    padding: .6rem 1.5rem;
+    border-radius: 0;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.usage {
+    display: none;
+    padding: 2rem;
+    font-size: .9rem;
+}
+
+
+#copyPassword{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    display: block;
+    animation: scale-in-ver-top 500ms;
+}
+
+
+ @-webkit-keyframes scale-in-ver-top {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-ver-top {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
+  
