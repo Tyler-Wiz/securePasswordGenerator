@@ -43,7 +43,7 @@ h1{
 
 #passwordResult{
     width:100%;
-    padding: 1rem;
+    padding: 1rem 3rem;
     margin-bottom: 2rem; 
     border: none;
     border-bottom: 1px solid black;
@@ -64,6 +64,8 @@ h1{
 input {
     outline: none;
 }
+
+
 
 button {
     border: none;
